@@ -1,0 +1,28 @@
+{
+	"name": "Football Apps",
+	"short_name": "Football Apps",
+	"description": "Aplikasi seputar bola berbasis apps",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#69f0ae",
+	"theme_color": "#69f0ae",
+	 "icons": [
+    {
+      "src": "/img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/maskable-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+    "gcm_sender_id": "511344127256"
+}

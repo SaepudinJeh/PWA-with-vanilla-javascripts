@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>HOME</title>
+  <meta name="description" content="My first PWA"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2196F3">
+  <link rel="apple-touch-icon" href="/img/icon-192x192.png">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav class="teal amber darken-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">Home</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">&#9776;</a>
+
+      <ul class="topnav right hide-on-med-and-down">
+        <li><a class="waves-effect" href="/">Teams</a></li>
+        <li><a class="waves-effect" href="/pages/standings.html">Standings</a></li>
+        <li><a class="waves-effect" href="/pages/bookmark.html">Bookmark</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="waves-effect" href="/">Teams</a></li>
+        <li><a class="waves-effect" href="/pages/standings.html">Standings</a></li>
+        <li><a class="waves-effect" href="/pages/bookmark.html">Bookmark</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+
+  <div class="body-content container">
+    <div class="section no-pad-bot">
+        <h5 class="header center" style="margin-bottom: 50px;">List All Teams La Liga</h5>
+        <div class="row card-small" id="homeTeams">
+          <!-- Loader -->
+            <loader>
+              <span></span>
+              <span></span>
+              <span></span>
+            </loader>
+          <!-- Akhir Loader -->
+        </div>
+  </div>
+  </div>
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/teams.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+</body>
+</html>
